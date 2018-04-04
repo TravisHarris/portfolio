@@ -61,7 +61,10 @@ function displayStats(data) {
 	----------------------------------------*/
 
 	$("#treehouse-profile").html(`
-			<h1>Treehouse Profile</h1>
+			<div id="treehouse-header">
+				<img id="treehouse-logo" src="../media/portfolio/treehouse.svg" alt="treehouse logo">
+				<h1>Treehouse Profile</h1>
+			</div>
 			<ul id="points-ul">
 				<li class="points total"><h3>Total Points: ${data.points.total}</h3></li>
 				<li class="points html"><h3>HTML:  ${data.points.HTML}</h3></li>

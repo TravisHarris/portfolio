@@ -199,10 +199,18 @@ section {
 
 #treehouse-profile {
 	border-top: 1px solid rgba(255,255,255,0.8);
+	text-align: center;
+}
+
+#treehouse-logo {
+	display: block;
+	width: 15%;
+	margin: 1rem auto;
 }
 
 #treehouse-profile h1 {
 	text-align: center;
+	margin-top: 0;
 }
 
 #points-ul li {
@@ -273,7 +281,7 @@ section {
 }
 
 .total {
-	background-color: #28B463;
+	background-color: #6FBC6D;
 }
 
 .html {
@@ -356,8 +364,17 @@ section {
 		padding-left: 1rem;
 	}
 
+	#treehouse-logo,
 	#treehouse-profile h1 {
-		margin-top: 0;
+		display: inline-block;
+	}
+
+	#treehouse-logo {
+		margin: 1rem;
+	}
+
+	#treehouse-profile h1 {
+		margin: 0 0 1rem 1rem;
 	}
 
 	.treehouse-badge {
@@ -441,6 +458,10 @@ section {
 
 	#about p {
 		width: 80%;
+	}
+	#treehouse-profile h1 {
+		padding-top: 2rem;
+		transform: translateY(-2.5rem);
 	}
 
 	.treehouse-badge {
