@@ -1,0 +1,449 @@
+
+	/*----------------------------------------
+		HTML Tags
+	----------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: rgba(255,255,255,0.8);
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.2s ease-out;
+}
+
+header {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+section {
+	width: 90%;
+	margin: 0 auto;
+}
+
+	/*----------------------------------------
+		ID Tags
+	----------------------------------------*/
+
+#page-video {
+	position: fixed;
+	z-index: -100;
+	bottom: 0;
+	right: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+#avatar {
+	display: block;
+	width: 12rem;
+	border-radius: 50%;
+	margin: 4rem auto 1rem;
+	border: 0.25rem solid rgba(255,255,255, 0.8);
+}
+
+#name {
+	margin: 1rem 0 1rem 0;
+	flex: 3;
+}
+
+#nav-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#main-nav {
+	position: absolute;
+	top: 3.5rem;
+	left: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	transition: transform 0.2s ease-out;
+}
+
+#main-nav-ul {
+	list-style: none;
+	margin: 0;
+	padding: 1.5rem 0;
+	text-align: center;
+	background: linear-gradient(transparent, #fff 5%, #fff 95%, transparent);
+}
+
+#main-nav li {
+	margin: 0 auto;
+	width: 80%;
+	border-bottom: 1px solid rgba(24,24,24,0.4);
+}
+
+#main-nav li:last-child {
+	border: none;
+}
+
+#main-nav-ul li a,
+#main-nav-ul li a:visited {
+	color: rgba(24,24,24,0.7);
+	text-shadow: 1px 1px 1px rgba(24,24,24,0.4);
+	display: block;
+	padding: 1rem 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+#main-nav-ul li a:hover {
+	color: rgba(24,24,24,0.7);
+}
+
+#menu-container {
+	position: relative;
+	flex: 1;
+}
+
+#menu {
+	position: relative;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	float: right;
+	margin-right: 1rem;
+}
+
+#menu input {
+	display: none;
+}
+
+#menu-icon-before,
+#menu-icon-after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 2.5rem;
+	cursor: pointer;
+	margin-top: 0.8rem;
+}
+
+#menu-icon-after {
+	display: none;
+}
+
+#menu-icon-before:before,
+#menu-icon-after:before {
+	font-size: 2.5rem;
+}
+
+#menu-icon-before:before {
+	content: "\2261";
+}
+
+#menu-icon-after:before {
+	content: "\00D7";
+}
+
+#about p {
+	width: 95%;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+#education,
+#projects {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(255,255,255,0.8);
+}
+
+#education h3 {
+	text-align: center;
+}
+
+#diploma {
+	display: block;
+	width: 14rem;
+	margin: 0 auto;
+	filter: invert();
+}
+
+#points-ul,
+#treehouse-badge-ul,
+#projects-ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#treehouse-profile {
+	border-top: 1px solid rgba(255,255,255,0.8);
+}
+
+#treehouse-profile h1 {
+	text-align: center;
+}
+
+#points-ul li {
+	border-radius: 15px;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+#points-ul h3 {
+	display: inline-block;
+	width: 70%;
+	text-align: left;
+	margin: 0.7rem 0;
+	font-size: 1.4rem;
+	color: rgba(24,24,24,0.9);
+}
+
+#treehouse-badge-ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+	/*----------------------------------------
+		Class Tags
+	----------------------------------------*/
+
+.treehouse-desc {
+	margin: 2rem 0;
+}
+
+.treehouse-badge {
+	flex: 1 40%;
+	margin: 0 0.5rem;
+}
+
+.treehouse-badge img {
+	display: block;
+	margin: 0 auto;
+	width: 5rem;
+}
+
+.project figure {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.project figure img {
+	display: block;
+	width: 100%;
+}
+
+.project figure figcaption {
+	position: absolute;
+	width: 100%;
+	padding: 1rem 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 10;
+	background-color: rgba(24,24,24,0.9);
+	line-height: 1.5;
+}
+
+.treehouse-badge h4 {
+	text-align: center;
+}
+
+.total {
+	background-color: #28B463;
+}
+
+.html {
+	background-color: #39ADD1;
+}
+
+.css {
+	background-color: #3079AB;
+}
+
+.javascript {
+	background-color: #c25975;
+}
+
+.project {
+	margin: 2rem auto;
+	border: 0.25rem solid rgba(255,255,255, 0.8);
+	border-radius: 5px;
+}
+
+.figure-link,
+.figure-link:visited {
+	color: rgba(255,255,255, 0.8);
+}
+
+.figure-link:hover {
+	color: rgba(255,255,255, 0.6);
+}
+
+	/*----------------------------------------
+		clearfix
+	----------------------------------------*/
+
+.clear {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+	/*----------------------------------------
+		Media Queries
+	----------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+	#main-nav {
+		top: 0;
+		width: 30%
+	}
+
+	#main-nav-ul {
+		padding: 2.5rem 0;
+		text-align: left;
+		height: 100vh;
+		background: linear-gradient(transparent, #fff 2%, #fff 98%, transparent);
+	}
+
+	#menu-icon-after:before {
+		color: rgba(24,24,24,0.7);
+		text-shadow: 1px 1px 1px rgba(24,24,24,0.4);
+	}
+
+	#diploma-treehouse {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#diploma-container,
+	#treehouse-profile {
+		flex: 1 50%;
+	}
+
+	#diploma {
+		margin-top: 4rem;
+	}
+
+	#treehouse-profile {
+		border-top: none;
+		padding-left: 1rem;
+	}
+
+	#treehouse-profile h1 {
+		margin-top: 0;
+	}
+
+	.treehouse-badge {
+		flex: 1 30%;
+	}
+
+	#projects-ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.project {
+		flex: 1 40%;
+		margin: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1020px) {
+
+	#name {
+		position: absolute;
+		top: 9rem;
+		left: 20rem;
+		margin: 1rem 0 1rem 0;
+	}
+
+	#main-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	#main-nav-ul {
+		margin: 1rem 3.5rem 0 0;
+		padding: 0;
+		background: transparent;
+		float: right;
+	}
+
+	#main-nav li {
+		margin: 0 0.5rem;
+		width: 80%;
+		border: none;
+		display: inline;
+	}
+
+	#main-nav-ul li a,
+	#main-nav-ul li a:visited {
+		color: rgba(255,255,255,0.9);
+		text-shadow: 1px 1px 1px rgba(24,24,24,0.4);
+		display: inline-block;
+		padding: 1rem 0;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	#main-nav-ul li a:hover {
+		color: rgba(255,255,255,0.7);
+	}
+
+	#menu-container {
+		display: none;
+	}
+
+	section {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	#avatar {
+		margin: 4rem 4rem 1rem;
+	}
+
+	#about {
+		margin-top: 2.5rem;
+	}
+
+	#about p {
+		width: 80%;
+	}
+
+	.treehouse-badge {
+		flex: 1 10%;
+	}
+}
