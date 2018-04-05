@@ -258,6 +258,7 @@ section {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .project figure img {
@@ -268,12 +269,29 @@ section {
 .project figure figcaption {
 	position: absolute;
 	width: 100%;
-	padding: 1rem 0;
+	height: 100%;
+	padding: 0.5rem 0;
 	bottom: 0;
 	text-align: center;
 	z-index: 10;
 	background-color: rgba(24,24,24,0.9);
 	line-height: 1.5;
+	transition: transform 0.5s ease-out;
+	transform: translateY(80%);
+}
+
+.project figure figcaption h3 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.project figure figcaption p {
+	margin-bottom: 0;
+}
+
+figure:hover figcaption{
+	transform: translateY(0);
 }
 
 .treehouse-badge h4 {
@@ -309,6 +327,16 @@ section {
 
 .figure-link:hover {
 	color: rgba(255,255,255, 0.6);
+}
+
+.la,
+.la:visited,
+.la:hover {
+	font-family: FontAwesome;
+	color: rgba(255,255,255,0.9);
+	font-size: 2rem;
+	margin: 0;
+	padding: 0;
 }
 
 	/*----------------------------------------
