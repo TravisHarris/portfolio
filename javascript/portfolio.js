@@ -62,7 +62,7 @@ function displayStats(data) {
 
 	$("#treehouse-profile").html(`
 			<div id="treehouse-header">
-				<img id="treehouse-logo" src="../media/portfolio/treehouse.svg" alt="treehouse logo">
+				<img id="treehouse-logo" src="media/portfolio/treehouse.svg" alt="treehouse logo">
 				<h1>Treehouse Profile</h1>
 			</div>
 			<ul id="points-ul">
