@@ -1,0 +1,119 @@
+
+	/*----------------------------------------
+		HTML Tags
+	----------------------------------------*/
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	background-color: #fff;
+}
+
+main {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+}
+
+header,
+section {
+	border-bottom: 2px solid #000;
+}
+
+header {
+	position: relative;
+}
+
+p {
+	line-height: 1.5;
+}
+
+footer {
+	text-align: right;
+}
+
+	/*----------------------------------------
+		ID Tags
+	----------------------------------------*/
+
+#name {
+	margin-bottom: 0.1rem;
+	font-size: 2.3rem;
+}
+
+#job {
+	margin-top: 0.1rem;
+	color: steelblue;
+}
+
+#contact {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#profile {
+	padding-left: 1rem;
+}
+
+#skills * {
+	padding: 0;
+	margin: 0;
+}
+
+#skills {
+	padding-left: 1rem;
+}
+
+#skills td {
+	padding-bottom: 1rem;
+}
+
+#skills h3 {
+	padding-right: 1rem;
+}
+
+	/*----------------------------------------
+		Class Tags
+	----------------------------------------*/
+
+.section-content {
+	padding-left: 1rem;
+}
+
+	/*----------------------------------------
+		Media Queries
+	----------------------------------------*/
+
+@media print {
+
+	html * {
+		color: #000;
+		background-color: #fff;
+	}
+
+	main {
+		width: 80%;
+	}
+
+	#contact {
+		background-color: transparent;
+	}
+
+	#projects {
+		margin-top: 50%;
+	}
+}
