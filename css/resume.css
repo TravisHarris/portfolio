@@ -65,6 +65,10 @@ footer {
 	right: 0;
 }
 
+#contact * {
+	margin: 0.2rem 0 0.3rem 0;
+}
+
 #profile {
 	padding-left: 1rem;
 }
