@@ -287,18 +287,15 @@ section {
 .project figure figcaption h3 {
 	margin: 0;
 	padding: 0.8rem 0;
-	/*font-size: 70%;*/
 	font-weight: normal;
 }
 
 .project figure figcaption p {
 	margin: 0;
-	/*font-size: 70%;*/
 }
 
 .project figure figcaption a {
 	display: block;
-	/*margin: 1rem 0;*/
 }
 
 figure:hover figcaption{
@@ -516,6 +513,16 @@ figure:hover figcaption{
 
 @media only screen and (min-width: 1200px) {
 	.project figure figcaption {
-		font-size: 80%;
+		font-size: 70%;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.project figure figcaption {
+		font-size: 100%;
+	}
+
+	.project figure figcaption h3 {
+		padding-bottom: 2rem;
 	}
 }
