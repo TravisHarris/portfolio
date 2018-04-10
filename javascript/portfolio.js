@@ -5,6 +5,9 @@
 
 $(".scroll").on("click touchstart" , function (event) {
         event.preventDefault();
+        // hide menu when mobile menu nav link is clicked
+        menuBtn.checked = false;
+		checkMenu();
         $('html,body').stop();
         //calculate destination place
         let dest = 0;
@@ -55,15 +58,6 @@ function checkWindowSize() {
 
 menuBtn.addEventListener("click", () => {
 	checkMenu();
-});
-
-// check if mobile menu link was clicked, if so hide the menu
-
-$("#main-nav-ul").on("click", (event) => {
-	if(event.target.tagName === "A"){
-		menuBtn.checked = false;
-		checkMenu();
-	}
 });
 
 
